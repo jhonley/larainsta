@@ -142,11 +142,9 @@ public function comments(Request $request){
 
 // tira comentario
 
-public function unset_comments($comment_id){
-  $tirar = Comments::where('comment_id', '=', $comment_id)->where('user_id', '=', auth()->id())->delete();
+// public function unset_comments($comment_id){
+//   $tirar = Comments::where('comment_id', '=', $comment_id)->where('user_id', '=', auth()->id())->delete();return redirect()->back();
 
-  return redirect()->back();
-
-}
+// }
 
 }
